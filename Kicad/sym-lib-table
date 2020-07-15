@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name Gigatron-rescue)(type Legacy)(uri ${KIPRJMOD}/Gigatron-rescue.lib)(options "")(descr ""))
+  (lib (name Gigatron-parts)(type Legacy)(uri ${KIPRJMOD}/Gigatron-parts.lib)(options "")(descr ""))
+  (lib (name MJ-3536N)(type Legacy)(uri ${KIPRJMOD}/MJ-3536N/MJ-3536N.lib)(options "")(descr ""))
+  (lib (name 54819-0519)(type Legacy)(uri ${KIPRJMOD}/54819-0519/54819-0519.lib)(options "")(descr ""))
+  (lib (name wickerlib)(type Legacy)(uri ${KIPRJMOD}/wickerlib.lib)(options "")(descr ""))
+)

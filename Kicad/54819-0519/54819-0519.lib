@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 54819-0519
+#
+DEF 54819-0519 J 0 40 N N 1 L N
+F0 "J" -200 350 50 H V L BNN
+F1 "54819-0519" 0 -401 50 H V L BNN
+F2 "54819-0519" 0 0 50 H I L BNN
+F3 "0.88 USD" 0 0 50 H I L BNN "Price"
+F4 "Good" 0 0 50 H I L BNN "Availability"
+F5 "54819-0519" 0 0 50 H I L BNN "MP"
+F6 "Molex" 0 0 50 H I L BNN "MF"
+F7 "USB On-The-Go %28OTG%29 Mini-B Receptacle%2C Right Angle%2C Through Hole Solder Tails and Shell Tabs%2C Lead-Free" 0 0 50 H I L BNN "Description"
+F8 "None" 0 0 50 H I L BNN "Package"
+DRAW
+P 2 0 0 16 300 300 -200 300 N
+P 2 0 0 16 -200 300 -200 -300 N
+P 2 0 0 16 -200 -300 -100 -300 N
+P 2 0 0 16 -100 -300 300 -300 N
+P 2 0 0 6 -100 -300 -100 -400 N
+T 900 300 -125 100 0 0 0 USB Normal 0 L B
+X D+ 3 -300 0 100 R 40 40 0 0 P 
+X D- 2 -300 100 100 R 40 40 0 0 P 
+X VBUS 1 -300 200 100 R 40 40 0 0 P 
+X ID 4 -300 -100 100 R 40 40 0 0 P 
+X S1 S1 -100 -400 0 U 40 40 0 0 P 
+X S2 S2 -100 -400 0 U 40 40 0 0 P 
+X GND 5 -300 -200 100 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
