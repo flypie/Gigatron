@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP 74HCT04
-D Hex Inverter (pin 10 adapted for Gigatron clock)
-K TTL not inv
-$ENDCMP
-#
-#End Doc Library

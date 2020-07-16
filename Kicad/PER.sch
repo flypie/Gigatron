@@ -51,12 +51,11 @@ Text Label 2000 2500 0    60   ~ 0
 Text Label 2000 2700 0    60   ~ 0
 ~VSYNC
 Text Notes 950  950  0    60   ~ 0
-The RGB resistor values depend on the 74xx sub-family of the OUT register:\n 7400/74LS: 390Ω / 820Ω\n 74HCT/HC: 750Ω / 1500Ω
+The RGB resistor values depend on the 74xx sub-family of the OUT register:\n 7400/74LS: 390ohms / 820Ω\n 74HCT/HC: 750Ω / 1500Ω
 NoConn ~ 3900 2200
 NoConn ~ 3900 1600
 NoConn ~ 3900 1400
 NoConn ~ 3300 1900
-NoConn ~ 3300 2000
 Text Notes 5650 2550 0    60   ~ 0
 Blinkenlights\n
 Text Notes 2950 5650 0    60   ~ 0
@@ -66,25 +65,25 @@ DB15 connector for 64 colors analog\nRGB video out (VGA compatible)
 $Comp
 L power:GND #PWR015
 U 1 1 598080EB
-P 9500 4900
-F 0 "#PWR015" H 9500 4650 50  0001 C CNN
-F 1 "GND" H 9500 4750 50  0000 C CNN
-F 2 "" H 9500 4900 50  0001 C CNN
-F 3 "" H 9500 4900 50  0001 C CNN
-	1    9500 4900
+P 9475 4775
+F 0 "#PWR015" H 9475 4525 50  0001 C CNN
+F 1 "GND" H 9475 4625 50  0000 C CNN
+F 2 "" H 9475 4775 50  0001 C CNN
+F 3 "" H 9475 4775 50  0001 C CNN
+	1    9475 4775
 	1    0    0    -1  
 $EndComp
 Text Notes 7250 4000 0    60   ~ 0
 DAC\n
-Text Notes 8050 4650 2    60   ~ 0
+Text Notes 8025 4525 2    60   ~ 0
 Low\npass
-Text Notes 8400 4100 0    60   ~ 0
+Text Notes 8375 3975 0    60   ~ 0
 AC coupling\nHigh pass
 Text Notes 8350 1950 0    60   ~ 0
 Attenuation from 74HCT output to audio\nline level by two overlapping filter slopes:\nf_L = 160 Hz; f_H = 700 Hz
-Text Notes 9600 4000 0    60   ~ 0
+Text Notes 9575 3875 0    60   ~ 0
 Line out
-Text Notes 8350 5400 0    60   ~ 0
+Text Notes 8325 5275 0    60   ~ 0
 Audio
 $Bitmap
 Pos 9300 2850
@@ -1937,7 +1936,7 @@ F 3 "" H 2800 5600 50  0001 C CNN
 	1    2800 5600
 	1    0    0    -1  
 $EndComp
-Text Notes 9600 5400 0    60   ~ 0
+Text Notes 9575 5275 0    60   ~ 0
 3.5mm stereo audio connector\nfor PC speakers or amplifier
 Wire Wire Line
 	1400 1300 1650 1300
@@ -1990,26 +1989,14 @@ Wire Wire Line
 Wire Wire Line
 	2800 1800 3300 1800
 Wire Wire Line
-	3100 2200 3300 2200
-Wire Wire Line
 	3100 1300 3100 1500
 Wire Wire Line
-	3100 2550 3350 2550
-Wire Wire Line
 	3300 1300 3100 1300
-Connection ~ 3100 2200
 Wire Wire Line
 	3300 1500 3100 1500
 Connection ~ 3100 1500
 Wire Wire Line
-	3300 1700 3100 1700
-Connection ~ 3100 1700
-Wire Wire Line
-	3300 2100 3100 2100
-Connection ~ 3100 2100
-Wire Wire Line
 	3350 2550 3350 2650
-Connection ~ 3350 2550
 Wire Wire Line
 	2500 2500 2500 2950
 Wire Wire Line
@@ -2035,31 +2022,31 @@ Wire Wire Line
 Wire Wire Line
 	4800 3800 4300 3800
 Wire Wire Line
-	8800 4300 8900 4300
+	8775 4175 8875 4175
 Wire Wire Line
-	8200 4300 8200 4450
+	8175 4175 8175 4325
 Wire Wire Line
-	8900 4300 8900 4450
-Connection ~ 8200 4300
+	8875 4175 8875 4325
+Connection ~ 8175 4175
 Wire Wire Line
-	7900 4900 8200 4900
+	7875 4775 8175 4775
 Wire Wire Line
-	8900 4900 8900 4750
-Connection ~ 8900 4900
+	8875 4775 8875 4625
+Connection ~ 8875 4775
 Wire Wire Line
-	8200 4750 8200 4900
-Connection ~ 8200 4900
-Connection ~ 8900 4300
+	8175 4625 8175 4775
+Connection ~ 8175 4775
+Connection ~ 8875 4175
 Wire Wire Line
-	7900 4300 8200 4300
+	7875 4175 8175 4175
 Wire Wire Line
 	5500 3600 5900 3600
 Wire Wire Line
-	6800 4900 4800 4900
+	6800 4600 4800 4600
 Wire Wire Line
-	4800 4900 4800 4000
+	4800 4600 4800 4000
 Wire Wire Line
-	4400 4200 4400 4500
+	4400 4200 4400 4400
 Wire Wire Line
 	4800 3800 4800 3600
 Wire Wire Line
@@ -2101,13 +2088,13 @@ Wire Wire Line
 	1550 6500 2900 6500
 Connection ~ 1550 6200
 Wire Wire Line
-	4400 4500 6800 4500
+	4400 4400 6800 4400
 Wire Wire Line
-	4600 4700 6800 4700
+	4600 4500 6800 4500
 Wire Wire Line
 	4400 4200 4300 4200
 Wire Wire Line
-	4600 4700 4600 4100
+	4600 4500 4600 4100
 Wire Wire Line
 	4600 4100 4300 4100
 Wire Wire Line
@@ -2152,15 +2139,12 @@ Wire Wire Line
 Wire Wire Line
 	1400 2700 1650 2700
 Wire Wire Line
-	9400 4300 9400 4600
-Connection ~ 9400 4300
-Connection ~ 9400 4900
+	9375 4175 9375 4475
+Connection ~ 9375 4175
 Wire Wire Line
-	9400 4600 9600 4600
-Wire Wire Line
-	9400 4900 9400 4700
-NoConn ~ 9600 4400
-NoConn ~ 9600 4500
+	9375 4475 9575 4475
+NoConn ~ 9575 4275
+NoConn ~ 9575 4375
 Wire Wire Line
 	1550 2500 1650 2500
 Wire Wire Line
@@ -2170,23 +2154,15 @@ Wire Wire Line
 Wire Wire Line
 	2150 2200 2150 2300
 Wire Wire Line
-	3100 2200 3100 2550
-Wire Wire Line
 	3100 1500 3100 1700
-Wire Wire Line
-	3100 1700 3100 2100
-Wire Wire Line
-	3100 2100 3100 2200
 Wire Wire Line
 	3350 2550 3600 2550
 Wire Wire Line
-	8200 4300 8500 4300
+	8175 4175 8475 4175
 Wire Wire Line
-	8900 4900 9400 4900
+	8175 4775 8875 4775
 Wire Wire Line
-	8200 4900 8900 4900
-Wire Wire Line
-	8900 4300 9400 4300
+	8875 4175 9375 4175
 Wire Wire Line
 	6250 6500 6250 6600
 Wire Wire Line
@@ -2198,16 +2174,14 @@ Wire Wire Line
 Wire Wire Line
 	2500 2950 4000 2950
 Wire Wire Line
-	9400 4300 9600 4300
-Wire Wire Line
-	9400 4900 9500 4900
+	9375 4175 9575 4175
 $Comp
 L Device:R R15
 U 1 1 597C4C46
 P 1800 2100
 F 0 "R15" V 1880 2100 50  0000 C CNN
 F 1 "1k5" V 1800 2100 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2100 50  0001 C CNN
 F 3 "" H 1800 2100 50  0001 C CNN
 	1    1800 2100
 	0    1    1    0   
@@ -2218,7 +2192,7 @@ U 1 1 597C4CAE
 P 1800 2300
 F 0 "R16" V 1880 2300 50  0000 C CNN
 F 1 "750" V 1800 2300 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2300 50  0001 C CNN
 F 3 "" H 1800 2300 50  0001 C CNN
 	1    1800 2300
 	0    1    1    0   
@@ -2229,7 +2203,7 @@ U 1 1 597C4EB8
 P 1800 1900
 F 0 "R14" V 1880 1900 50  0000 C CNN
 F 1 "750" V 1800 1900 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 1900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 1900 50  0001 C CNN
 F 3 "" H 1800 1900 50  0001 C CNN
 	1    1800 1900
 	0    1    1    0   
@@ -2240,7 +2214,7 @@ U 1 1 597C4ED7
 P 1800 1700
 F 0 "R13" V 1880 1700 50  0000 C CNN
 F 1 "1k5" V 1800 1700 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 1700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 1700 50  0001 C CNN
 F 3 "" H 1800 1700 50  0001 C CNN
 	1    1800 1700
 	0    1    1    0   
@@ -2251,7 +2225,7 @@ U 1 1 597C4EFB
 P 1800 1500
 F 0 "R12" V 1880 1500 50  0000 C CNN
 F 1 "750" V 1800 1500 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 1500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 1500 50  0001 C CNN
 F 3 "" H 1800 1500 50  0001 C CNN
 	1    1800 1500
 	0    1    1    0   
@@ -2262,7 +2236,7 @@ U 1 1 597C4F23
 P 1800 1300
 F 0 "R11" V 1880 1300 50  0000 C CNN
 F 1 "1k5" V 1800 1300 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 1300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 1300 50  0001 C CNN
 F 3 "" H 1800 1300 50  0001 C CNN
 	1    1800 1300
 	0    1    1    0   
@@ -2273,7 +2247,7 @@ U 1 1 597C4F4D
 P 1800 2500
 F 0 "R17" V 1880 2500 50  0000 C CNN
 F 1 "68" V 1800 2500 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2500 50  0001 C CNN
 F 3 "" H 1800 2500 50  0001 C CNN
 	1    1800 2500
 	0    1    1    0   
@@ -2284,7 +2258,7 @@ U 1 1 597C4F78
 P 1800 2700
 F 0 "R18" V 1880 2700 50  0000 C CNN
 F 1 "68" V 1800 2700 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2700 50  0001 C CNN
 F 3 "" H 1800 2700 50  0001 C CNN
 	1    1800 2700
 	0    1    1    0   
@@ -2295,7 +2269,7 @@ U 1 1 597C7048
 P 5350 3000
 F 0 "D8" H 5350 3100 50  0000 C CNN
 F 1 "LED" H 5350 2900 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 5350 3000 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5350 3000 50  0001 C CNN
 F 3 "" H 5350 3000 50  0001 C CNN
 	1    5350 3000
 	-1   0    0    1   
@@ -2306,7 +2280,7 @@ U 1 1 597C71BF
 P 5350 3300
 F 0 "D7" H 5350 3400 50  0000 C CNN
 F 1 "LED" H 5350 3200 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 5350 3300 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5350 3300 50  0001 C CNN
 F 3 "" H 5350 3300 50  0001 C CNN
 	1    5350 3300
 	-1   0    0    1   
@@ -2317,7 +2291,7 @@ U 1 1 597C71F6
 P 5350 3600
 F 0 "D6" H 5350 3700 50  0000 C CNN
 F 1 "LED" H 5350 3500 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 5350 3600 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5350 3600 50  0001 C CNN
 F 3 "" H 5350 3600 50  0001 C CNN
 	1    5350 3600
 	-1   0    0    1   
@@ -2325,45 +2299,45 @@ $EndComp
 $Comp
 L Device:C C43
 U 1 1 59858D0F
-P 8200 4600
-F 0 "C43" H 8225 4700 50  0000 L CNN
-F 1 "0.1µ" H 8225 4500 50  0000 L CNN
-F 2 "Capacitors_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 8238 4450 50  0001 C CNN
-F 3 "" H 8200 4600 50  0001 C CNN
-	1    8200 4600
+P 8175 4475
+F 0 "C43" H 8200 4575 50  0000 L CNN
+F 1 "0.1µ" H 8200 4375 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 8213 4325 50  0001 C CNN
+F 3 "" H 8175 4475 50  0001 C CNN
+	1    8175 4475
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C44
 U 1 1 59858E78
-P 8650 4300
-F 0 "C44" V 8600 4100 50  0000 L CNN
-F 1 "0.1µ" V 8800 4200 50  0000 L CNN
-F 2 "Capacitors_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 8688 4150 50  0001 C CNN
-F 3 "" H 8650 4300 50  0001 C CNN
-	1    8650 4300
+P 8625 4175
+F 0 "C44" V 8575 3975 50  0000 L CNN
+F 1 "0.1µ" V 8775 4075 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 8663 4025 50  0001 C CNN
+F 3 "" H 8625 4175 50  0001 C CNN
+	1    8625 4175
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R10
 U 1 1 598590D5
-P 8900 4600
-F 0 "R10" V 8980 4600 50  0000 C CNN
-F 1 "2.2k" V 8900 4600 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8830 4600 50  0001 C CNN
-F 3 "" H 8900 4600 50  0001 C CNN
-	1    8900 4600
+P 8875 4475
+F 0 "R10" V 8955 4475 50  0000 C CNN
+F 1 "2.2k" V 8875 4475 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8805 4475 50  0001 C CNN
+F 3 "" H 8875 4475 50  0001 C CNN
+	1    8875 4475
 	1    0    0    -1  
 $EndComp
 $Comp
-L Gigatron-parts:4606X-R2R-103LF R9
+L SamacSys_Parts:4606X-R2R-103LF R9
 U 1 1 598EE458
-P 7350 4600
-F 0 "R9" H 7350 4100 60  0000 C CNN
-F 1 "R=10kΩ" H 7350 5100 60  0000 C CNN
-F 2 "Resistors_THT:R_Array_SIP6" H 6700 4000 60  0001 C CNN
-F 3 "" H 6700 4000 60  0001 C CNN
-	1    7350 4600
+P 6800 4200
+F 0 "R9" H 7175 3525 60  0000 C CNN
+F 1 "R=10kohms" H 7100 4375 60  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP6" H 6150 3600 60  0001 C CNN
+F 3 "" H 6150 3600 60  0001 C CNN
+	1    6800 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2372,7 +2346,7 @@ U 1 1 597C7231
 P 5350 3900
 F 0 "D5" H 5350 4000 50  0000 C CNN
 F 1 "LED" H 5350 3800 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 5350 3900 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5350 3900 50  0001 C CNN
 F 3 "" H 5350 3900 50  0001 C CNN
 	1    5350 3900
 	-1   0    0    1   
@@ -2383,7 +2357,7 @@ U 1 1 59906810
 P 6350 3400
 F 0 "R8" V 6550 3400 60  0000 C CNN
 F 1 "4605X-101-222LF" H 6350 3800 60  0001 C CNN
-F 2 "Resistors_THT:R_Array_SIP5" V 6100 3250 60  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP5" V 6100 3250 60  0001 C CNN
 F 3 "" V 6100 3250 60  0001 C CNN
 	1    6350 3400
 	0    1    -1   0   
@@ -2407,7 +2381,7 @@ U 1 1 599874D7
 P 6250 5800
 F 0 "J4" H 6250 6450 50  0000 C CNN
 F 1 "DB9_MALE_MountingHoles" H 6250 6375 50  0000 C CNN
-F 2 "Connectors:DB9MD" H 6250 5800 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 6250 5800 50  0001 C CNN
 F 3 "" H 6250 5800 50  0001 C CNN
 	1    6250 5800
 	1    0    0    -1  
@@ -2418,40 +2392,34 @@ U 1 1 59C297B1
 P 2800 5750
 F 0 "R19" V 2880 5750 50  0000 C CNN
 F 1 "2.2k" V 2800 5750 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2730 5750 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2730 5750 50  0001 C CNN
 F 3 "" H 2800 5750 50  0001 C CNN
 	1    2800 5750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack4_Ground J2
+L SamacSys_Parts:SJ1-3523N J2
 U 1 1 59E7A583
-P 9800 4500
-F 0 "J2" H 9800 4750 50  0000 L CNN
-F 1 "CONN-JACK-STEREO-R/A-3PIN-3.5MM" H 8900 4050 50  0000 L CNN
-F 2 "Kicad:SJ1-3523N-MvK" H 9800 4150 50  0001 C CIN
-F 3 "http://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf" H 9800 4500 5   0001 C CNN
-F 4 "CONN JACK STEREO R/A 3PIN 3.5MM" H 9800 4150 50  0001 C CIN "Description"
-F 5 "CUI" H 9800 4150 50  0001 C CIN "MF_Name"
-F 6 "SJ1-3523N" H 9800 4150 50  0001 C CIN "MF_PN"
-F 7 "Digikey" H 9800 4150 50  0001 C CIN "S1_Name"
-F 8 "CP1-3523N-ND" H 9800 4150 50  0001 C CIN "S1_PN"
-	1    9800 4500
+P 10975 4475
+F 0 "J2" H 10975 4725 50  0000 L CNN
+F 1 "CONN-JACK-STEREO-R/A-3PIN-3.5MM" H 11025 4025 50  0000 L CNN
+F 2 "SamacSys_Parts_l:SJ13523N" H 10975 4125 50  0001 C CIN
+F 3 "http://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf" H 10975 4475 5   0001 C CNN
+F 4 "CONN JACK STEREO R/A 3PIN 3.5MM" H 10975 4125 50  0001 C CIN "Description"
+F 5 "CUI" H 10975 4125 50  0001 C CIN "MF_Name"
+F 6 "SJ1-3523N" H 10975 4125 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 10975 4125 50  0001 C CIN "S1_Name"
+F 8 "CP1-3523N-ND" H 10975 4125 50  0001 C CIN "S1_PN"
+	1    10975 4475
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	10225 4700 10225 4100
-Wire Wire Line
-	10225 4100 9800 4100
-Wire Wire Line
-	9400 4700 10225 4700
 $Comp
 L Connector:DB15_Female_HighDensity_MountingHoles J3
 U 1 1 597C4B2F
 P 3600 1800
 F 0 "J3" H 3600 2650 50  0000 C CNN
 F 1 "DB15_FEMALE_HighDensity_MountingHoles" H 3600 2550 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15-HD_Female_Vertical_P2.29x1.98mm_MountingHoles" H 2650 2200 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 2650 2200 50  0001 C CNN
 F 3 "" H 2650 2200 50  0001 C CNN
 	1    3600 1800
 	1    0    0    -1  
@@ -2512,4 +2480,86 @@ Text GLabel 3300 4600 0    60   Input ~ 0
 H
 Text Notes 3400 3450 0    60   ~ 0
 Extended output
+$Comp
+L power:GND #PWR0165
+U 1 1 5F8BA87C
+P 3300 7100
+F 0 "#PWR0165" H 3300 6850 50  0001 C CNN
+F 1 "GND" H 3300 6950 50  0000 C CNN
+F 2 "" H 3300 7100 50  0001 C CNN
+F 3 "" H 3300 7100 50  0001 C CNN
+	1    3300 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0166
+U 1 1 5F8BB734
+P 3800 4900
+F 0 "#PWR0166" H 3800 4650 50  0001 C CNN
+F 1 "GND" H 3800 4750 50  0000 C CNN
+F 2 "" H 3800 4900 50  0001 C CNN
+F 3 "" H 3800 4900 50  0001 C CNN
+	1    3800 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0167
+U 1 1 5F8C198F
+P 3300 5800
+F 0 "#PWR0167" H 3300 5650 50  0001 C CNN
+F 1 "VCC" H 3325 6000 50  0000 C CNN
+F 2 "" H 3300 5800 50  0001 C CNN
+F 3 "" H 3300 5800 50  0001 C CNN
+	1    3300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0168
+U 1 1 5F8C27E2
+P 3800 3300
+F 0 "#PWR0168" H 3800 3150 50  0001 C CNN
+F 1 "VCC" H 3800 3450 50  0000 C CNN
+F 2 "" H 3800 3300 50  0001 C CNN
+F 3 "" H 3800 3300 50  0001 C CNN
+	1    3800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10975 4475 10975 4775
+Wire Wire Line
+	10975 4775 9475 4775
+Connection ~ 9475 4775
+Wire Wire Line
+	8875 4775 9475 4775
+Wire Wire Line
+	7875 4175 7875 3900
+Wire Wire Line
+	7875 3900 6800 3900
+Wire Wire Line
+	6800 3900 6800 4200
+Wire Wire Line
+	6800 4700 6800 5025
+Wire Wire Line
+	6800 5025 7875 5025
+Wire Wire Line
+	7875 5025 7875 4775
+Wire Wire Line
+	3100 1700 3300 1700
+Connection ~ 3100 1700
+Wire Wire Line
+	3300 2100 3100 2100
+Wire Wire Line
+	3300 2200 3100 2200
+Connection ~ 3100 2100
+Wire Wire Line
+	3100 2100 3100 2200
+Connection ~ 3100 2200
+Wire Wire Line
+	3100 2200 3100 2550
+Connection ~ 3350 2550
+Wire Wire Line
+	3100 2550 3350 2550
+Wire Wire Line
+	3100 2100 3100 1700
+NoConn ~ 3300 2000
 $EndSCHEMATC

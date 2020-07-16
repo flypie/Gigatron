@@ -1,9 +1,2 @@
 (fp_lib_table
-  (lib (name w_conn_pc)(type KiCad)(uri "$(KIPRJMOD)/kcswalter_mod_conn_pc/w_conn_pc.pretty")(options "")(descr ""))
-  (lib (name MJ-3536N)(type Legacy)(uri "$(KIPRJMOD)/MJ-3536N/MJ-3536N.mod")(options "")(descr ""))
-  (lib (name 54819-0519)(type Legacy)(uri "$(KIPRJMOD)/54819-0519/54819-0519.mod")(options "")(descr ""))
-  (lib (name Kicad)(type KiCad)(uri "$(KIPRJMOD)")(options "")(descr ""))
-  (lib (name 54819-0519-MvK)(type KiCad)(uri "$(KIPRJMOD)/54819-0519-MvK.pretty")(options "")(descr ""))
-  (lib (name DB15)(type KiCad)(uri "$(KIPRJMOD)/DB15")(options "")(descr ""))
-  (lib (name Wickerlib)(type KiCad)(uri "$(KIPRJMOD)/Wickerlib.pretty")(options "")(descr ""))
 )
